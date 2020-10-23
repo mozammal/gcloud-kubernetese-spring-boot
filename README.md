@@ -47,7 +47,8 @@ Delete the Kubernetes cluster using the following command:
 gcloud container clusters delete demo-spring-boot-cluster --zone us-central1-a
 ```
 
-How to get external ip address $IP_ADDTESS_FROM_GOOGLE from  outside
+How to get EXTERNAL-IP address $IP_ADDTESS_FROM_GOOGLE that we can use to make REST calls to 
+our sample REST APIS
 
 ```bash
 kubectl get ingress
