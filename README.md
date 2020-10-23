@@ -20,9 +20,13 @@ Start the Spring Boot app using the following command:
 
 ```bash
 
+gcloud config set project {your_project_name}
+
 mvn clean package -Dmaven.test.skip=true
 
 gcloud compute disks create --size=10GiB --zone=us-central1-a mongodb
+
+gcloud container clusters create demo-spring-boot-cluster --zone=us-central1-a
 
 gcloud container clusters list
 
