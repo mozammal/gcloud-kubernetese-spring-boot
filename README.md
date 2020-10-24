@@ -90,13 +90,6 @@ gcloud container clusters delete demo-spring-boot-cluster --zone us-central1-a
 ```
 
 How to get EXTERNAL_IP address $IP_ADDTESS_FROM_GOOGLE that we can use to make REST calls to 
-our sample REST APIS if you happen to use Ingress
-
-```bash
-kubectl get ingress
-```
-
-How to get EXTERNAL_IP address $IP_ADDTESS_FROM_GOOGLE that we can use to make REST calls to 
 our sample REST APIS if you happen to use LodBalancer
 
 ```bash
