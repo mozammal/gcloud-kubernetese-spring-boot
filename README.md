@@ -81,8 +81,6 @@ docker tag  person-boot-app-gcloud:1.0 gcr.io/[YOUR-PROJECT-ID]/person-boot-app-
 gcloud docker -- push gcr.io/[YOUR-PROJECT-ID]/person-boot-app-gcloud:1.0
 
 kubectl apply -f deployment-person-service.yml
-
-kubectl apply -f gcloud-ingress.yaml
 ```
 
 Delete the Kubernetes cluster using the following command:
