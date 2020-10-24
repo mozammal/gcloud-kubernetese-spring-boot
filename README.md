@@ -60,7 +60,7 @@ Start the Spring Boot app using the following command:
 
 ```bash
 
-gcloud config set project {your_project_name}
+gcloud config set project [YOUR-PROJECT-ID]
 
 mvn clean package -Dmaven.test.skip=true
 
@@ -70,15 +70,15 @@ gcloud container clusters create demo-spring-boot-cluster --zone=us-central1-a -
 
 gcloud container clusters list
 
-gcloud container clusters get-credentials demo-spring-boot-cluster --zone us-central1-a --project {your_project_name}
+gcloud container clusters get-credentials demo-spring-boot-cluster --zone us-central1-a --project [YOUR-PROJECT-ID]
 
 kubectl apply -f deployment-mongo.yaml
 
 docker build --tag person-boot-app-gcloud:1.0 .
 
-docker tag  person-boot-app-gcloud:1.0 gcr.io/{your_project_name}/person-boot-app-gcloud:1.0
+docker tag  person-boot-app-gcloud:1.0 gcr.io/[YOUR-PROJECT-ID]/person-boot-app-gcloud:1.0
 
-gcloud docker -- push gcr.io/{your_project_name}/person-boot-app-gcloud:1.0
+gcloud docker -- push gcr.io/[YOUR-PROJECT-ID]/person-boot-app-gcloud:1.0
 
 kubectl apply -f deployment-person-service.yml
 
