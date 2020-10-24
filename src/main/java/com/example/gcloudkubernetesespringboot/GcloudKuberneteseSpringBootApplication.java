@@ -16,21 +16,4 @@ public class GcloudKuberneteseSpringBootApplication {
   public static void main(String[] args) {
     SpringApplication.run(GcloudKuberneteseSpringBootApplication.class, args);
   }
-
-  /*  @Bean
-  ApplicationRunner loadData(PersonRepository personRepository) {
-
-    return args ->
-        personRepository
-            .deleteAll()
-            .thenMany(
-                Flux.just(
-                        new String[][] {
-                          {"mozammal", "hossain"}, {"nasrin", "khatun"}, {"ayub", "rahman"}
-                        })
-                    .map(p -> Person.builder().firstname(p[0]).lastname(p[1]).build())
-                    .flatMap(personRepository::save))
-            .thenMany(personRepository.findAll())
-            .subscribe(person -> log.info(person.toString()));
-  }*/
 }
