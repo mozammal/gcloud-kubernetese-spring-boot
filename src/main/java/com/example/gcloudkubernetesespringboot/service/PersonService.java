@@ -18,10 +18,12 @@ public class PersonService {
   }
 
   public Mono<Person> create(Person person) {
+    log.info("creating new user {}", person);
     return personRepository.save(person);
   }
 
   public Flux<Person> findAllPerson() {
+    log.info("findding all users");
     return personRepository.findAll();
   }
 
