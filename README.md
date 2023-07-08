@@ -52,7 +52,7 @@ Replace `SERVICE_NAME` with the name of the service to enable.
 To install this example application, run the following commands:
 
 ```bash
-git clone https://github.com/mozammal/gcloud-kubernetese-spring-boot.gitt
+git clone https://github.com/mozammal/gcloud-kubernetese-spring-boot.git
 cd gcloud-kubernetese-spring-boot
 ```
 
